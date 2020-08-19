@@ -4,8 +4,22 @@ Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
     # Your code here
+    if len(arr) > 0:
+        count = -1
+        new_arr = []
+        for i in arr:
+            count1 = -1
+            count += 1
+            new_num = 1
+            for j in arr:
+                count1 += 1
+                if count != count1:
+                    new_num = new_num * j
+            new_arr.append(new_num)
+    return new_arr
+                    
 
-    pass
+
 
 
 if __name__ == '__main__':
